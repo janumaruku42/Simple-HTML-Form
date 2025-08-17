@@ -4,23 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div>
-    <h1>Learn to code by watching others</h1>
-    <p>See how experienced developers solve problens in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
-  </div>
-  <div>
-    <p><strong>Try it fre for 7 days</strong> then $20/mo. thereafter</p>
-    <form>
-      <input type="text" name="first-name" placeholder="First name"/>
-      <input type="text" name="last-name" placeholder="Last name"/>
-      <input type="text" name="email" placeholder="Email address"/>
-      <input type="text" name="password" placeholder="Password"/>
-      <input type="button" name="send" value="CLAIM YOUR FREE TRAIL"/>
-    </form>
-    <p>By clicking the button you are agreeing to our <strong>Terms and Services</strong></p>
+  <div class="container">
+    <div class="page-text">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problens in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div>
+      <div class="cta round-corner container-shadow">
+        <p><strong>Try it fre for 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+      <div class="form round-corner container-shadow">
+        <form>
+          <input type="text" name="first-name" placeholder="First name"/>
+          <input type="text" name="last-name" placeholder="Last name"/>
+          <input type="text" name="email" placeholder="Email address"/>
+          <input type="text" name="password" placeholder="Password"/>
+          <input class="container-shadow" type="button" name="send" value="CLAIM YOUR FREE TRAIL"/>
+        </form>
+        <p class="terms">
+          By clicking the button you are agreeing to our <strong>Terms and Services</strong>
+        </p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
